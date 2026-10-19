@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Book Winners</title>
+
+    <style>
+        @font-face {
+            font-family: Candara;
+            src: url("Candara.ttf");
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: Candara, Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        form {
+            box-sizing: border-box;
+            width: 600px;
+            max-width: 100%;
+            min-height: 600px;
+            padding: 24px;
+            background:#71493B;
+            margin: 36px auto;
+            border: 1px white;
+            box-shadow: 2px 3px 6px white;
+            border-radius: 18px;
+            font-size: 14pt;
+            line-height: 1.2em;
+        }
+
+        fieldset {
+            margin-top: 18px;
+            border: 1px solid white;
+            border-radius: 6px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            box-sizing: border-box;
+            width: 98%;
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            padding: 4px;
+            margin-bottom: 12px;
+        }
+
+        select {
+            width: 50%;
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            padding: 2px 4px;
+        }
+
+        textarea {
+            width: 98%;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 6px 5px 6px 0;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            height: 40px;
+            background: lightgreen;
+            border: 1px solid green;
+            border-radius: 5px;
+            display: block;
+            margin: 12px auto 0;
+            font-size: 12pt;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #8fdb8f;
+        }
+
+        .form-note {
+            font-size: 10pt;
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            form {
+                width: 100%;
+                padding: 16px;
+                margin: 20px auto;
+            }
+
+            select {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="https://formsubmit.co/walczc1@unlv.nevada.edu"
+          method="POST">
+
+        <h1>Free Book Winners</h1>
+
+        <label for="first-name">First name</label><br>
+        <input type="text" id="first-name"
+               name="first-name" required><br>
+
+        <label for="last-name">Last name</label><br>
+        <input type="text" id="last-name"
+               name="last-name" required><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email"
+               name="email" required><br>
+
+        <fieldset>
+            <legend>Book Types (Select One)</legend>
+
+            <input type="radio" id="mac"
+                   name="os" value="Mac OS" required>
+            <label for="mac">Hardcover</label><br>
+
+            <input type="radio" id="windows"
+                   name="os" value="Windows">
+            <label for="windows">Paperback</label><br>
+
+            <input type="radio" id="unix"
+                   name="os" value="UNIX">
+            <label for="unix">Kindle</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Desired Genre</legend>
+
+            <input type="checkbox" id="design"
+                   name="services[]" value="Design">
+            <label for="design">Romace</label><br>
+
+            <input type="checkbox" id="uxui"
+                   name="services[]" value="UX/UI">
+            <label for="uxui">Fantasy</label><br>
+
+            <input type="checkbox" id="consulting"
+                   name="services[]" value="Consulting">
+            <label for="consulting">Sci-Fi</label><br>
+        </fieldset>
+
+        <br>
+
+        <label for="timeframe">When would you like it?</label><br>
+
+        <select id="timeframe" name="timeframe">
+            <option value="ASAP">ASAP</option>
+            <option value="This week">This week</option>
+            <option value="This month">This month</option>
+            <option value="This year">This year</option>
+            <option value="Not sure">No preference</option>
+        </select>
+
+        <br><br>
+
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" name="comments"></textarea>
+
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
+
